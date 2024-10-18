@@ -1,0 +1,21 @@
+﻿@model Online_IT_Preparation.Models.AccountModel
+
+<h2>Account Information</h2>
+
+<!-- Display user info -->
+<p><strong>Username:</strong> @Model.UserName</p>
+<p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+
+<!-- Update Phone Number Form -->
+<form asp-action="UpdatePhoneNumber" method="post">
+    <label for="PhoneNumber">Update Phone Number:</label>
+    <input type="text" name="PhoneNumber" id="PhoneNumber" value="@Model.PhoneNumber" />
+    <button type="submit">Update</button>
+</form>
+
+<!-- Add Email Form -->
+<form asp-action="AddEmail" method="post">
+    <label for="Email">Add Email:</label>
+    <input type="email" name="Email" id="Email" />
+    <button type="submit">Add</button>
+</form>

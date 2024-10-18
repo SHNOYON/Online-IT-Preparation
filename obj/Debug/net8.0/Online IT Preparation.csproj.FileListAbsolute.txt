@@ -74,3 +74,4 @@ D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.
 D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.csproj.AssemblyReference.cache
 D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online I.64E6FE92.Up2Date
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.sourcelink.json

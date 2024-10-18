@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using Online_IT_Preparation.Data;
 using Online_IT_Preparation.Models;
+using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 namespace Online_IT_Preparation.Controllers
 {
@@ -19,31 +23,61 @@ namespace Online_IT_Preparation.Controllers
             return View();
         }
 
+
         [HttpPost]
-        public IActionResult Login(string PhoneNumber)
+        public async Task<IActionResult> Login(string phoneNumber)
         {
-          
+            var user = await _context.Users.SingleOrDefaultAsync(u => u.PhoneNumber == phoneNumber);
 
-            if (IsValidUser(PhoneNumber)) 
+            if (user != null)
             {
-                var user = _context.Users.FirstOrDefault(u => u.PhoneNumber == PhoneNumber);
+                var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, user.PhoneNumber)
+        };
 
-                if (user != null)
-                {
-                    
-                    return RedirectToAction("Index", "Home");
-                }
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-
-                ModelState.AddModelError("", "Invalid User, please Sign Up first.");
-                return View();
+                return RedirectToAction("Account", "User"); // Redirect to the account page after login
             }
 
             ModelState.AddModelError("", "Invalid login attempt.");
-            return View();
+            return View(); // Return to the login view with an error message
         }
 
-        
+        //public IActionResult Login(string PhoneNumber)
+        //{
+
+
+        //    if (IsValidUser(PhoneNumber)) 
+        //    {
+        //        var user = _context.Users.FirstOrDefault(u => u.PhoneNumber == PhoneNumber);
+
+        //        if (user != null)
+        //        {
+
+        //            var claims = new List<Claim>
+        //            {
+        //                new Claim(ClaimTypes.Name, user.PhoneNumber)
+        //            };
+
+        //            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        //            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+
+        //            return RedirectToAction("Account"); // Redirect to the account page after login
+        //        }
+
+
+        //        ModelState.AddModelError("", "Invalid User, please Sign Up first.");
+        //        return View();
+        //    }
+
+        //    ModelState.AddModelError("", "Invalid login attempt.");
+        //    return View();
+        //}
+
+
         [HttpGet]
         public IActionResult SignUp()
         {

@@ -1,23 +1,26 @@
+/* Base font size for responsiveness */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
+/* Focus styles for buttons, links, and inputs */
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+/* Ensure full page height and a relative position for content */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
-/* Page background */
+/* Page background styling */
 body {
     background-color: #2596be; /* Light blue background for the entire page */
     font-family: Arial, sans-serif; /* Clean font family */
@@ -25,7 +28,7 @@ body {
     overflow: hidden; /* Disable scrollbars */
 }
 
-/* Full-page layout */
+/* Full-page layout for login */
 .login-page {
     display: flex;
     justify-content: center;
@@ -35,7 +38,7 @@ body {
     box-sizing: border-box; /* Make sure padding and borders are included in height calculation */
 }
 
-/* Form container */
+/* Login form container */
 .login-form-container {
     background-color: white; /* White form background */
     padding: 40px;
@@ -45,7 +48,7 @@ body {
     max-width: 400px; /* Ensures the form isn't too wide */
 }
 
-/* Title and text styling */
+/* Headings styling */
 h1, h2 {
     color: #333; /* Darker color for the heading */
 }
@@ -128,6 +131,7 @@ h2 {
     margin-bottom: 10px; /* Adjust this value for the desired gap */
 }
 
+/* Styling for signup heading */
 .signup-heading {
     background-color: #f0f8ff; /* Light background color for the heading */
     border: 2px solid #008CBA; /* Blue border color */
@@ -141,16 +145,3 @@ h2 {
     font-size: 24px; /* Font size for the heading */
     text-align: center; /* Center align the text inside the heading box */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
