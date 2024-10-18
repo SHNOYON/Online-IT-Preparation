@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-form-container">
+            <h1 class="text-center">Online IT Preparation</h1>
+            <hr class="line-separator">
+            <h2 class="text-center signup-heading">Sign Up</h2> <!-- Updated heading -->
+            <form asp-controller="Account" asp-action="SignUp" method="post">
+                <div class="form-group text-center user-name-input">
+                    <input type="text" class="form-control aligned-input" id="UserName" name="UserName" placeholder="Enter User Name" required />
+                </div>
+                <div class="form-group text-center">
+                    <input type="text" class="form-control aligned-input" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number" required />
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary aligned-button btn-login">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

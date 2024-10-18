@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-form-container">
+            <h1 class="text-center">Online IT Preparation</h1>
+            <hr class="line-separator">
+
+            <form asp-controller="Account" asp-action="Login" method="post">
+                <div class="form-group text-center">
+                    <input type="text" class="form-control aligned-input" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number" required />
+                </div>
+               
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary aligned-button btn-login">Login</button>
+                </div>
+                <div class="form-group text-center">
+                    <p>Not a member? <a asp-controller="Account" asp-action="SignUp">Signup</a></p>
+                </div>
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="form-group text-center">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <p class="text-danger" style="color: red; font-weight: bold;">@error.ErrorMessage</p> 
+                        }
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

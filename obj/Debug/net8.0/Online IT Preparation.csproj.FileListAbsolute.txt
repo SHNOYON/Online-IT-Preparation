@@ -1,0 +1,76 @@
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\appsettings.Development.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\appsettings.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Online IT Preparation.staticwebassets.runtime.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Online IT Preparation.exe
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Online IT Preparation.deps.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Online IT Preparation.runtimeconfig.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Online IT Preparation.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Online IT Preparation.pdb
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.AssemblyInfoInputs.cache
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.AssemblyInfo.cs
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.csproj.CoreCompileInputs.cache
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.MvcApplicationPartsAssemblyInfo.cache
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.RazorAssemblyInfo.cache
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.RazorAssemblyInfo.cs
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets.build.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets.development.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets\msbuild.Online IT Preparation.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets\msbuild.build.Online IT Preparation.props
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Online IT Preparation.props
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Online IT Preparation.props
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\scopedcss\bundle\Online IT Preparation.styles.css
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\scopedcss\projectbundle\Online IT Preparation.bundle.scp.css
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\refint\Online IT Preparation.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.pdb
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.genruntimeconfig.cache
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\ref\Online IT Preparation.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Azure.Core.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Azure.Identity.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online IT Preparation.csproj.AssemblyReference.cache
+D:\Personal Projects\Online IT Preparation\Online IT Preparation\obj\Debug\net8.0\Online I.64E6FE92.Up2Date

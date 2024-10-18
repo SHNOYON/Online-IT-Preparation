@@ -1,0 +1,156 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Page background */
+body {
+    background-color: #2596be; /* Light blue background for the entire page */
+    font-family: Arial, sans-serif; /* Clean font family */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Disable scrollbars */
+}
+
+/* Full-page layout */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    background-color: #2596be; /* Ensuring the background stays blue */
+    box-sizing: border-box; /* Make sure padding and borders are included in height calculation */
+}
+
+/* Form container */
+.login-form-container {
+    background-color: white; /* White form background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px; /* Ensures the form isn't too wide */
+}
+
+/* Title and text styling */
+h1, h2 {
+    color: #333; /* Darker color for the heading */
+}
+
+h1 {
+    font-size: 28px; /* Larger font size for the main title */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* Input field styling */
+.aligned-input {
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Adds space below the input field */
+    width: 100%; /* Full width container */
+    max-width: 300px; /* Sets max-width to match the buttons */
+    display: block;
+    margin: 0 auto; /* Center the input field */
+}
+
+/* Button styling */
+.aligned-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px; /* Fully rounded button */
+    width: 100%; /* Same width as input field */
+    max-width: 300px; /* Match the width of input field */
+    display: block;
+    margin: 0 auto; /* Center the buttons */
+}
+
+.btn-login {
+    margin-top: 30px; /* Gap between phone input and login button */
+    background-color: #d3d3d3; /* Light ash background */
+    border: none;
+    color: black; /* Darker text color to contrast with the light background */
+}
+
+    .btn-login:hover {
+        background-color: #bfbfbf; /* Slightly darker ash color on hover */
+    }
+
+/* Center form contents */
+.text-center {
+    text-align: center;
+}
+
+/* Line separator styling */
+.line-separator {
+    border: 0;
+    border-bottom: 2px solid #d3d3d3; /* Light ash color */
+    width: 100%; /* Full width */
+    margin: 10px auto 40px; /* Increase margin-bottom for more gap */
+}
+
+/* Link styling */
+.login-form-container p {
+    margin-top: 20px; /* Adds space above the link */
+}
+
+.login-form-container a {
+    color: #008CBA; /* Blue color for the signup link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the link text bold */
+}
+
+    .login-form-container a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+
+/* Add margin between UserName and PhoneNumber fields */
+.user-name-input {
+    margin-bottom: 10px; /* Adjust this value for the desired gap */
+}
+
+.signup-heading {
+    background-color: #f0f8ff; /* Light background color for the heading */
+    border: 2px solid #008CBA; /* Blue border color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Make the box fit around the text */
+    margin: 0 auto; /* Center the heading horizontally */
+    margin-bottom: 30px; /* Adjusted top margin to move it up */
+    margin-left: 130px; /* Add left margin to move it to the right */
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Font size for the heading */
+    text-align: center; /* Center align the text inside the heading box */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
