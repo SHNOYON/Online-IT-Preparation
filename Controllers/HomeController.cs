@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Online_IT_Preparation.Models;
 using System.Diagnostics;
@@ -17,7 +18,8 @@ namespace Online_IT_Preparation.Controllers
         {
             return View();
         }
+        
 
-       
+
     }
 }

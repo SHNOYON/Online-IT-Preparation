@@ -42,6 +42,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Personal Projects/Online IT Preparation/Online IT Preparation/Views/User/Departmental.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXBhcnRtZW50YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Personal Projects/Online IT Preparation/Online IT Preparation/Views/User/NonDepartmental.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxOb25EZXBhcnRtZW50YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Personal Projects/Online IT Preparation/Online IT Preparation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

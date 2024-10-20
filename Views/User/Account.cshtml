@@ -1,21 +1,83 @@
 ﻿@model Online_IT_Preparation.Models.AccountModel
 
-<h2>Account Information</h2>
+<div class="account-info-container">
+    <h2>Account Information</h2>
 
-<!-- Display user info -->
-<p><strong>Username:</strong> @Model.UserName</p>
-<p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+    <!-- Display user info -->
+    <p><strong>Username:</strong> @Model.UserName</p>
+    <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
 
-<!-- Update Phone Number Form -->
-<form asp-action="UpdatePhoneNumber" method="post">
-    <label for="PhoneNumber">Update Phone Number:</label>
-    <input type="text" name="PhoneNumber" id="PhoneNumber" value="@Model.PhoneNumber" />
-    <button type="submit">Update</button>
-</form>
+    <!-- Update Phone Number Form -->
+    <form asp-action="UpdatePhoneNumber" method="post" class="update-form">
+        <label for="PhoneNumber">Update Phone Number:</label>
+        <input type="text" name="PhoneNumber" id="PhoneNumber" value="@Model.PhoneNumber" />
+        <button type="submit">Update</button>
+    </form>
 
-<!-- Add Email Form -->
-<form asp-action="AddEmail" method="post">
-    <label for="Email">Add Email:</label>
-    <input type="email" name="Email" id="Email" />
-    <button type="submit">Add</button>
-</form>
+    <!-- Add/Update Email Form -->
+    <form asp-action="@(!string.IsNullOrEmpty(Model.Email) ? "UpdateEmail" : "AddEmail")" method="post" class="email-form">
+        <label for="Email">@(!string.IsNullOrEmpty(Model.Email) ? "Update Email:" : "Add Email:")</label>
+        <input type="email" name="Email" id="Email" value="@Model.Email" />
+        <button type="submit">@(!string.IsNullOrEmpty(Model.Email) ? "Update" : "Add")</button>
+    </form>
+</div>
+
+<!-- Modal for Phone Number Update -->
+<div class="modal" id="updateSuccessModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Phone number updated successfully.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="okButtonPhone" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Add/Update Email -->
+<div class="modal" id="emailSuccessModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Email @(!string.IsNullOrEmpty(Model.Email) ? "updated" : "added") successfully.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="okButtonEmail" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var updateSuccess = '@TempData["UpdateSuccess"]';
+        var emailActionSuccess = '@TempData["EmailActionSuccess"]'; // For email add/update
+
+        // Show Phone update modal if update was successful
+        if (updateSuccess) {
+            $('#updateSuccessModal').modal('show');
+        }
+
+        // Show Email add/update modal if email action was successful
+        if (emailActionSuccess) {
+            $('#emailSuccessModal').modal('show');
+        }
+
+        // Redirect to Account page when "OK" button is clicked on Phone update modal
+        $('#okButtonPhone').click(function () {
+            window.location.href = '@Url.Action("Account", "User")';
+        });
+
+        // Redirect to Account page when "OK" button is clicked on Email add/update modal
+        $('#okButtonEmail').click(function () {
+            window.location.href = '@Url.Action("Account", "User")';
+        });
+
+        // Handle modal close (for "X" button) to redirect
+        $('#updateSuccessModal, #emailSuccessModal').on('hidden.bs.modal', function () {
+            window.location.href = '@Url.Action("Account", "User")';
+        });
+    });
+</script>

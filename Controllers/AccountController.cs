@@ -39,43 +39,18 @@ namespace Online_IT_Preparation.Controllers
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-                return RedirectToAction("Account", "User"); // Redirect to the account page after login
+                return RedirectToAction("Index", "Home");
             }
 
-            ModelState.AddModelError("", "Invalid login attempt.");
+            ModelState.AddModelError("", "Invalid login attempt!Please SignUp.");
             return View(); // Return to the login view with an error message
         }
 
-        //public IActionResult Login(string PhoneNumber)
-        //{
-
-
-        //    if (IsValidUser(PhoneNumber)) 
-        //    {
-        //        var user = _context.Users.FirstOrDefault(u => u.PhoneNumber == PhoneNumber);
-
-        //        if (user != null)
-        //        {
-
-        //            var claims = new List<Claim>
-        //            {
-        //                new Claim(ClaimTypes.Name, user.PhoneNumber)
-        //            };
-
-        //            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-        //            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-
-        //            return RedirectToAction("Account"); // Redirect to the account page after login
-        //        }
-
-
-        //        ModelState.AddModelError("", "Invalid User, please Sign Up first.");
-        //        return View();
-        //    }
-
-        //    ModelState.AddModelError("", "Invalid login attempt.");
-        //    return View();
-        //}
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Account"); // Redirect to login page
+        }
 
 
         [HttpGet]

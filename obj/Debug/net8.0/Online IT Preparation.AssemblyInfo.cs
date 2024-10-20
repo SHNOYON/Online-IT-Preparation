@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Online IT Preparation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94529efc272fbafbbf7014e78ede0437d40f12ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8d64384ffed59b96d286cbe5bd6793acf553273")]
 [assembly: System.Reflection.AssemblyProductAttribute("Online IT Preparation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Online IT Preparation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

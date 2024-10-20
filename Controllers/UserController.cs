@@ -17,7 +17,7 @@ namespace Online_IT_Preparation.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Login", "Account"); // Redirect to login if not authenticated
+                return RedirectToAction("Login", "Account"); 
             }
 
             var user = _context.Users.SingleOrDefault(u => u.PhoneNumber == User.Identity.Name);
@@ -25,10 +25,10 @@ namespace Online_IT_Preparation.Controllers
             if (user == null)
             {
                 ModelState.AddModelError("", "User not found. Please log in again.");
-                return RedirectToAction("Login", "Account"); // Redirect if user is not found
+                return RedirectToAction("Login", "Account"); 
             }
 
-            return View(user); // Pass user data to the view
+            return View(user); 
         }
 
 
@@ -42,6 +42,7 @@ namespace Online_IT_Preparation.Controllers
                 user.PhoneNumber = PhoneNumber;
                 _context.SaveChanges(); // Save the changes to the database
             }
+            TempData["UpdateSuccess"] = true;
             return RedirectToAction("Account");
         }
 
@@ -53,9 +54,34 @@ namespace Online_IT_Preparation.Controllers
             if (user != null)
             {
                 user.Email = Email;
-                _context.SaveChanges(); // Save the changes to the database
+                _context.SaveChanges();
+                TempData["EmailActionSuccess"] = true; // For showing the modal
             }
             return RedirectToAction("Account");
         }
+
+        public IActionResult UpdateEmail(string Email)
+        {
+            var user = _context.Users.SingleOrDefault(u => u.PhoneNumber == User.Identity.Name);
+            if (user != null)
+            {
+                user.Email = Email;
+                _context.SaveChanges();
+                TempData["EmailActionSuccess"] = true; // For showing the modal
+            }
+            return RedirectToAction("Account");
+        }
+
+        public IActionResult Departmental()
+        {
+            ViewData["Title"] = "Departmental Page";
+            return View();
+        }
+        public IActionResult NonDepartmental()
+        {
+            ViewData["Title"] = "NonDepartmental Page";
+            return View();
+        }
+
     }
 }

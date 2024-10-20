@@ -1,12 +1,20 @@
 /* Base font size for responsiveness */
 html {
     font-size: 14px;
+    height: 100%; /* Ensure full height for both HTML and body */
 }
 
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
+}
+
+/* Full page height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Base font for body */
 }
 
 /* Focus styles for buttons, links, and inputs */
@@ -22,10 +30,17 @@ html {
 
 /* Page background styling */
 body {
-    background-color: #2596be; /* Light blue background for the entire page */
+    background-color: #f0f8ff; /* Light background for the entire page */
     font-family: Arial, sans-serif; /* Clean font family */
     margin: 0; /* Remove default margin */
-    overflow: hidden; /* Disable scrollbars */
+    
+}
+
+/* Sidebar section */
+.sidebar {
+    background-color: #007bff; /* Darker blue for sidebar */
+    min-height: 100vh; /* Sidebar takes full vertical height */
+    padding-top: 20px;
 }
 
 /* Full-page layout for login */
@@ -145,3 +160,88 @@ h2 {
     font-size: 24px; /* Font size for the heading */
     text-align: center; /* Center align the text inside the heading box */
 }
+
+/* Main content container */
+.container-fluid {
+    height: 100%;
+    padding: 20px; /* General padding for the container */
+}
+
+/* Account Information section */
+.account-info-container {
+    background-color: #e3f2fd; /* Light blue background for the account info */
+    padding: 20px; /* Padding for some internal space */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    color: #333; /* Dark text for contrast */
+    max-width: 600px; /* Limit the width of the container */
+    margin: 20px auto; /* Center the container on the page */
+}
+
+/* Styling the forms inside Account Information */
+.update-form, .email-form {
+    margin-top: 20px; /* Add space between forms */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"], input[type="email"] {
+    width: 50%; /* Make the text box smaller */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between input and button */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+}
+
+button {
+    background-color: white; /* White background for button */
+    color: #2596be; /* Button text matches the background */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #f0f0f0; /* Light gray background on hover */
+    }
+
+/* Book list and important websites */
+.book-list ul, .important-websites ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.book-list li, .important-websites li {
+    margin: 5px 0; /* Space between list items */
+}
+
+/* Marks distribution sectors */
+.sector {
+    background-color: #f8f9fa; /* Light background for sectors */
+    padding: 10px;
+    margin: 10px 0; /* Margin between sections */
+    border-radius: 5px; /* Rounded corners */
+}
+.book-list {
+    background-color: #d1e7ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.important-websites {
+    background-color: #ffc107; /* Yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.marks-distribution {
+    background-color: #28a745; /* Green background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
